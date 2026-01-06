@@ -1,2 +1,5 @@
-# beathub-api
-BeatHub API
+# BeatHub API
+
+Welcome to the backend of BeatHub.
+- Status: Initial Setup
+- Developer: Chris
