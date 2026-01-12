@@ -1,0 +1,13 @@
+{
+  "_id": { "$oid": "ObjectId" },
+  "title": { "type": "string", "required": true },
+  "artistId": { "$oid": "ObjectId", "ref": "artists", "required": true },
+  "songs": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "songs" }
+  },
+  "releaseDate": { "type": "date" },
+  "coverImage": { "type": "string" },
+  "createdAt": { "type": "date" },
+  "updatedAt": { "type": "date" }
+}

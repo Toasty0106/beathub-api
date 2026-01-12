@@ -1,0 +1,22 @@
+{
+  "_id": { "$oid": "ObjectId" },
+  "userId": { "$oid": "ObjectId", "ref": "users", "required": true },
+  "favoriteArtists": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "artists" }
+  },
+  "favoriteSongs": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "songs" }
+  },
+  "favoriteAlbums": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "albums" }
+  },
+  "favoritePlaylists": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "playlists" }
+  },
+  "createdAt": { "type": "date" },
+  "updatedAt": { "type": "date" }
+}

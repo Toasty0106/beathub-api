@@ -1,0 +1,11 @@
+{
+  "_id": { "$oid": "ObjectId" },
+  "name": { "type": "string", "required": true },
+  "bio": { "type": "string" },
+  "genres": {
+    "type": "array",
+    "items": { "type": "string" }
+  },
+  "createdAt": { "type": "date" },
+  "updatedAt": { "type": "date" }
+}
