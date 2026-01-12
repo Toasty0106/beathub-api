@@ -1,0 +1,13 @@
+{
+  "_id": { "$oid": "ObjectId" },
+  "title": { "type": "string", "required": true },
+  "description": { "type": "string" },
+  "creatorUserId": { "$oid": "ObjectId", "ref": "users", "required": true },
+  "songIds": {
+    "type": "array",
+    "items": { "$oid": "ObjectId", "ref": "songs" }
+  },
+  "isPublic": { "type": "boolean", "default": false },
+  "createdAt": { "type": "date" },
+  "updatedAt": { "type": "date" }
+}
